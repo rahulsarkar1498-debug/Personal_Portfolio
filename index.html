@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: varela;
+            src: url('varela.ttf');
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: varela;
+            font-weight: bold;
+        }
+        nav{
+            display: flex;
+            height: 10vh;
+        }
+        .logo{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 3;
+        }
+        .ic{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .ic img{
+            width: 30px;
+            height: 30px;
+        }
+        li{
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        #abs{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: -999;
+            opacity: 0.5;
+        }
+        #home{
+            display: flex;
+            height: 90vh;
+        }
+        #home .d1{
+            flex: 1;
+            padding-left: 10%;
+            padding-top: 7%;
+            line-height: 2;
+        }
+        #home .d2{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #home .d2 img{
+            transform: rotate(-13deg);
+            box-shadow: 0px 0px 20px 1px black;
+            border-radius: 15px;
+        }
+        #s1{
+            font-size: 40px;
+        }
+        #s2{
+            font-size: 70px;
+        }
+        #s3{
+            font-size: 30px;
+        }
+        #cv{
+            width: 30%;
+            height: 10%;
+        }
+        #h{
+            width: 20px;
+            height: 20px;
+        }
+        #abs2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -999;
+            opacity: 0.8;
+        }
+        #sett{
+            position: absolute;
+            top: 10%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="abstract.png" id="abs">
+    <img src="bbb.png" id="abs2">
+    <nav>
+        <div class="logo">
+            R.Sarkar
+        </div>
+        <ul>
+            <li><a href="">Home <img src="home.png" id="h"></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Download my CV</a></li>
+            <li><a href="">Contact me</a></li>
+        </ul>
+        <div class="ic">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="whatsapp.png" alt="">
+            <img src="telegram.png" alt="">
+        </div>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="d1">
+                <img src="settings.gif" id="sett">
+                <span id="s1">Hello,</span> <br>
+                <span id="s2">I'm RAHUL SARKAR</span> <br>
+                <span id="s3">
+                    Computer Faculty cum Developer <br>
+                    From Assam, India <br>
+                </span>
+                <br>
+                <input type="button" id="cv" value="Download my CV">
+            </div>
+            <div class="d2">
+                <img src="photo.png" alt="">
+            </div>
+        </section>
+        <section id="about">
+  
+        </section>
+        <section id="skills">
+
+        </section>
+        <section id="contact_me">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
